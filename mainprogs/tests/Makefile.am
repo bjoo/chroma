@@ -249,13 +249,15 @@ t_minvert_quda_SOURCES = t_minvert_quda.cc
 endif
 
 if BUILD_GTEST
-check_PROGRAMS += t_inv_fgmres_dr  t_symm_prec
-	
+check_PROGRAMS += t_inv_fgmres_dr  t_symm_prec t_qudanef
+
 t_inv_fgmres_dr_SOURCES = t_inv_fgmres_dr.cc chroma_gtest_env.h \
 	fgmres_dr_tests.cc
-	
+
 t_symm_prec_SOURCES = t_symm_prec.cc chroma_gtest_env.h \
 	symm_prec_xml.h symm_prec_tests.cc
+
+t_qudanef_SOURCES = t_qudanef.cc qudanef_tests.cc qudanef_xml.h
 endif
 
 if BUILD_QPHIX

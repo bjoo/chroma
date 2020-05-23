@@ -20,7 +20,7 @@ public:
   }
   
   ~ChromaEnvironment() {
-    Chroma::finalize();
+    //    Chroma::finalize();
  }
 
   bool linkageHack(void)
